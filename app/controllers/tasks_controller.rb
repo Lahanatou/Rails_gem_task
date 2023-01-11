@@ -6,12 +6,6 @@ class TasksController < ApplicationController
     #@tasks = Task.all
     @q = Task.ransack(params[:q])
     @tasks = @q.result(distinct: true)
-    #@q = Task.ransack(status_eq: params[:q][:status]).result.to_sql
-    #@tasks = Task.ransack(status_eq: params[:q][:status]).result.to_sql
-    #puts params[:q][:status]
-    if params[:q]
-    #  @q = Task.ransack(status_eq: params[:q][:status]).result.to_sql
-    end
   end
 
   # GET /tasks/1

@@ -9,5 +9,5 @@ class Task < ApplicationRecord
   # def must_start_from_today
   #   errors.add(:deadline, 'must start from today.') if deadline.present? && deadline < Date.current
   # end
-  
+
 end
